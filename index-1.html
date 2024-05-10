@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Policy Quote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Get Your Insurance Quote</h1>
+        <form id="quoteForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" required>
+            <label for="location">Location (ZIP code):</label>
+            <input type="text" id="location" name="location" pattern="[0-9]{5}" required>
+            <label for="coverage">Coverage Type:</label>
+            <select id="coverage" name="coverage" required>
+                <option value="">Select Coverage</option>
+                <option value="auto">Auto Insurance</option>
+                <option value="home">Home Insurance</option>
+                <option value="health">Health Insurance</option>
+            </select>
+            <button type="submit">Get Quote</button>
+        </form>
+        <div id="quoteResult" class="hidden">
+            <h2>Your Insurance Quote:</h2>
+            <div id="quoteDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
