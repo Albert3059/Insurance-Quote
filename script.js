@@ -43,7 +43,7 @@ function displayQuote(quote) {
         <p><strong>Age:</strong> ${quote.age}</p>
         <p><strong>Location:</strong> ${quote.location}</p>
         <p><strong>Coverage Type:</strong> ${quote.coverage}</p>
-        <p><strong>Premium:</strong> $${quote.premium}</p>
+        <p><strong>Premium:</strong> R${quote.premium}</p>
     `;
 
     document.getElementById("quoteResult").classList.remove("hidden");
